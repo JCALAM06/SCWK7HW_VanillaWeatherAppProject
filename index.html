@@ -7,12 +7,44 @@
   </head>
   <body>
     <h1>Welcome to Wacky Weather App</h1>
-    <footer>
-        <p>This project was coded by 
-            <a href="#" target="blank">Joy Calamba</a> is
-            <a href="#" target="blank"> <u>open-sourced on GitHub</u></a> and
-            <a href="#" target="blank"> <u>hosted on Netlify</u></a>
+    <div class="weather_app">
+      <header>
+        <form id="search_form">
+          <input
+            type="text"
+            placeholder="enter a city name"
+            required
+            class="search_input"
+            id="search_input"
+          />
+          <input type="submit" value="Search" class="search_button" />
+        </form>
+      </header>
+      <main>
+        <div class="current_weather">
+          <div>
+            <h1 class="current_city">Melbourne</h1>
+            <p class="current_details">
+              <span id="current_date"></span>,
+              <span id="weather_condition">moderate rain</span><br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="currentDay_temperature">
+            <span class="currentDay_temp_icon">🌤️</span>
+            <span class="currentDay_temp_value" id="current_temp">23</span>
+            <span class="current_temp_unit">&degC</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="blank">Joy Calamba</a> is
+          <a href="#" target="blank"> <u>open-sourced on GitHub</u></a> and
+          <a href="#" target="blank"> <u>hosted on Netlify</u></a>
         </p>
-        
+      </footer>
+    </div>
   </body>
 </html>
