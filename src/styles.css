@@ -7,6 +7,11 @@ a {
   color: #885df1;
 }
 
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, serif;
+}
+
 .weather_app {
   background: white;
   max-width: 600px;
