@@ -8,7 +8,7 @@ function displayTemperature(response) {
 
 function search(event) {
   let searchInputElement = document.querySelector("#search_input");
-  let city = searchInputElement.ariaValueMax;
+  let city = searchInputElement.value;
 
   let apiKey = "34t14b5f55afff878dodf0ce647bbe96";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
