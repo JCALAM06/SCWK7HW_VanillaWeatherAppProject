@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeatherApp</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
+    <title>WeatherApp</title>
   </head>
   <body>
     <h1>Welcome to Wacky Weather App</h1>
@@ -15,12 +14,12 @@
         <form id="search_form">
           <input
             type="search"
-            placeholder="enter a city name"
+            placeholder="enter a city name..."
             required
             class="search_input"
             id="search_input"
           />
-          <input type="submit" value="Search" class="search_button" />
+          <input type="submit" value="search" class="search_button" />
         </form>
       </header>
       <main>
@@ -33,11 +32,9 @@
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <div class="currentDay_temperature">
-            <span class="currentDay_temp_icon">🌤️</span>
-            <span class="currentDay_temp_value" id="current_temperature"
-              >23</span
-            >
+          <div class="current_temperature">
+            <span class="current_temp_icon">🌤️</span>
+            <span class="current_temp_value" id="current_temperature">23</span>
             <span class="current_temp_unit">&degC</span>
           </div>
         </div>
