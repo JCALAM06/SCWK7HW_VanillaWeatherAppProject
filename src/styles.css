@@ -1,21 +1,33 @@
+html,
 body {
-  background: #6f53b6; /**#f9f7fe */
-  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: "Caveat Brush", cursive;
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: #3b2c61;
 }
 
 a {
   color: #885df1;
 }
 
-h1 {
+#main_header {
+  margin-top: 40px;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, serif;
+  color: rgb(243, 229, 243);
+  font-family: "Caveat Brush", cursive;
+  font-size: 50px;
 }
 
 .weather_app {
   background: white;
   max-width: 600px;
   margin: 60px auto;
+  margin-top: 10px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -27,11 +39,12 @@ header {
 }
 
 .search_input {
-  background-color: #f9f7fe;
+  background-color: #f2f0f5;
   border: none;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
-  padding: 20px;
+  margin-left: 25px;
+  padding: 15px;
   width: 75%;
   border-radius: 6px;
 }
@@ -42,7 +55,7 @@ header {
   background-color: #885df1;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 15px;
   line-height: 1;
   border-radius: 5px;
 }
@@ -51,7 +64,7 @@ main {
   padding: 30px 0;
 }
 
-.currentDay_emperature {
+.current_temperature {
   font-size: 48px;
 }
 
@@ -61,44 +74,54 @@ main {
 }
 
 .current_city {
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 900;
-  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 7px;
+  margin-top: 0;
+  text-align: left;
 }
+
 .current_details {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  color: rgba(61, 3, 132, 0.4);
+  font-size: 22px;
+  font-weight: 520;
+  line-height: 1.2;
+  margin-left: 25px;
+  margin-top: 0;
 }
 
 .current_details strong {
   color: #f65282;
+  font-size: 24px;
 }
 
-.currentDay_temp_icon {
+.current_temp_icon {
+  margin-right: 7px;
   position: relative;
   top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+  width: 75px;
+  height: auto;
 }
 
-.currentDay_temp_value {
+.current_temp_value {
   font-size: 80px;
   font-weight: bold;
 }
 
 .current_temp_unit {
   font-size: 28px;
+  margin-right: 14px;
   position: relative;
   top: -38px;
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
-  font-size: small;
+  border-top: 1px solid #d4d2d7;
+  color: rgba(39, 33, 66, 0.4);
+  font-family: "Reboto", sans-serif;
+  font-size: 12px;
+
   text-align: center;
   padding-top: 15px;
-
-  color: rgba(39, 33, 66, 0.4);
 }

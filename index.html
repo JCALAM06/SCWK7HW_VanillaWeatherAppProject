@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>WeatherApp</title>
   </head>
+
   <body>
-    <h1>Welcome to Wacky Weather App</h1>
+    <h1 id="main_header">WelComE to mY WonKy WeaTher aPp</h1>
     <div class="weather_app">
       <header>
         <form id="search_form">
@@ -28,12 +37,19 @@
             <h1 class="current_city" id="current_city">Melbourne</h1>
             <p class="current_details">
               <span id="current_date"></span>,
-              <span id="weather_condition">moderate rain</span><br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="weather_condition">Moderate rain</span><br />
+              Humidity: <strong id="humidity"> 87</strong>%, Wind:
+              <strong id="wind"> 7.2</strong> km/h
             </p>
           </div>
           <div class="current_temperature">
-            <span class="current_temp_icon">🌤️</span>
+            <img
+              id="weather_icon"
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              alt="weather_icon"
+              class="current_temp_icon"
+            />
+
             <span class="current_temp_value" id="current_temperature">23</span>
             <span class="current_temp_unit">&degC</span>
           </div>
